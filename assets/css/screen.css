@@ -30,6 +30,7 @@ production stylesheet in assets/built/screen.css
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
 @import "global.css";
+@import "menu.css";
 
 body {
     background: #f4f8fb;
@@ -357,19 +358,19 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     fill: #fff;
 }
 
-@media (max-width: 700px) {
-    .site-header {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .site-nav-left {
-        margin-right: 0;
-        padding-left: 4vw;
-    }
-    .site-nav-right {
-        display: none;
-    }
-}
+/*@media (max-width: 700px) {*/
+/*    .site-header {*/
+/*        padding-right: 0;*/
+/*        padding-left: 0;*/
+/*    }*/
+/*    .site-nav-left {*/
+/*        margin-right: 0;*/
+/*        padding-left: 4vw;*/
+/*    }*/
+/*    .site-nav-right {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
 
 
 /* 6. Post Feed

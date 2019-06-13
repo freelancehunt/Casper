@@ -79,6 +79,13 @@
 
 /*</editor-fold>*/
 
+#dropdown-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiBmaWxsPSJ3aGl0ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTY4MyA4MDhsLTc0MiA3NDFxLTE5IDE5LTQ1IDE5dC00NS0xOWwtNzQyLTc0MXEtMTktMTktMTktNDUuNXQxOS00NS41bDE2Ni0xNjVxMTktMTkgNDUtMTl0NDUgMTlsNTMxIDUzMSA1MzEtNTMxcTE5LTE5IDQ1LTE5dDQ1IDE5bDE2NiAxNjVxMTkgMTkgMTkgNDUuNXQtMTkgNDUuNXoiLz48L3N2Zz4=");
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
 /*<editor-fold desc="Copy .nav li a appearance for .nav li span.nav-item-title element">*/
 
 .nav li .nav-item-title {
@@ -241,3 +248,21 @@
         display: none !important;
     }
 }
+
+/*<editor-fold desc="Override base theme styles">*/
+
+@media (max-width: 700px) {
+    .site-header {
+        padding: 12px 4vw !important;
+    }
+
+    .site-nav-left {
+        padding-left: 0 !important;
+    }
+
+    .site-nav-right {
+        display: flex !important;
+    }
+}
+
+/*</editor-fold>*/

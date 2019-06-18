@@ -74,6 +74,7 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
     <script>
         $(document).ready(function(){
             $('#menu-btn, .nav-dropdown-container').click(function(){
@@ -81,7 +82,32 @@
             });
         });
     </script>
-    <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
+    {{#is "post"}}
+        <script type="text/javascript" src="{{asset "built/jquery.scrolldepth.js"}}"></script>
+        <script type="text/javascript" src="{{asset "built/screentime.js"}}"></script>
+        <script>
+            $.scrollDepth({userTiming: false});
+
+            let middlePostElementIndex = Math.floor($('.post-content > *').length / 2);
+            $.screentime({
+                fields: [
+                    {
+                        selector: '.post-content > *:first',
+                        name: 'Post top'
+                    },
+                    {
+                        selector: '.post-content > *:eq(' + middlePostElementIndex + ')',
+                        name: 'Post middle'
+                    },
+                    {
+                        selector: '.post-content > *:last',
+                        name: 'Post bottom'
+                    },
+                ],
+                googleAnalytics: true
+            });
+        </script>
+    {{/is}}
 
     {{#if pagination.pages}}
     <script src="{{asset "built/infinitescroll.js"}}"></script>

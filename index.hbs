@@ -49,7 +49,6 @@ into the {body} of the default.hbs template --}}
     $(document).ready(function () {
 
         var nav = document.querySelector('.site-nav-main .site-nav');
-        var navDropdowns = document.querySelectorAll('.nav-dropdown-container');
         var feed = document.querySelector('.post-feed');
 
         var lastScrollY = window.scrollY;
@@ -85,10 +84,6 @@ into the {body} of the default.hbs template --}}
             } else {
                 nav.classList.remove('fixed-nav-active');
             }
-
-            navDropdowns.forEach((dropdown) => {
-                dropdown.classList.remove('open');
-            });
 
             ticking = false;
         }

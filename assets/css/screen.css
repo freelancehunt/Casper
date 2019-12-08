@@ -30,7 +30,6 @@ production stylesheet in assets/built/screen.css
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
 @import "global.css";
-/*@import "menu.css";*/ /* testval @prid: revert to @import in css, add `!important` where needed */
 
 body {
     background: #fff;

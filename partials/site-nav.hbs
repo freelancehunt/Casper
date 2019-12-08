@@ -10,7 +10,7 @@
                 {{navigation}}
             {{/if}}
             {{#is "post"}}
-                <span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}">{{post.title}}</span>
+                <span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}" title="{{post.title}}">{{post.title}}</span>
             {{/is}}
         </div>
     </div>
@@ -24,7 +24,7 @@
             {{/if}}
         </div>
         {{#if @labs.members}}
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+            <a class="subscribe-button" href="#subscribe">Подписаться</a>
         {{else}}
             <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
         {{/if}}

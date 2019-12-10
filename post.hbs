@@ -210,6 +210,12 @@ into the {body} of the default.hbs template --}}
                 $this.children('.author-card').removeClass('hovered');
             }, 800);
         });
+
+        // Reload FB comments plugin with dark theme if browser's in the dark mode
+        if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            $('.post-full-comments .fb-comments').attr('data-colorscheme', 'dark');
+            FB.XFBML.parse($('.post-full-comments')[0]);
+        }
     });
 </script>
 {{/contentFor}}

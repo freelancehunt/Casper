@@ -43,6 +43,16 @@
     overflow: hidden;
 }
 
+.post-full-content h3 a {
+    box-shadow: none;
+}
+
+.post-full-header,
+.post-full-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /*</editor-fold>*/
 
 .site-nav-logo img {

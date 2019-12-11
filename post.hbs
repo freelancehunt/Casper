@@ -178,6 +178,10 @@ into the {body} of the default.hbs template --}}
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
+<!-- Start emojicom.io widget -->
+{{!-- Emojicom campaign ID is set in blog settings via injected code --}}
+<script src="https://cdn.emojicom.io/embed/widget.js" async></script>
+<!-- End emojicom.io widget -->
 <script>
     $(document).ready(function () {
         // FitVids - start

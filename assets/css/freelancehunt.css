@@ -1,4 +1,4 @@
-/*<editor-fold desc="Base theme modifications">*/
+/*<editor-fold desc="Base theme modifications (layout)">*/
 
 /* vertically align social network icons with "Subscribe" btn */
 .social-link {
@@ -43,10 +43,24 @@
     overflow: hidden;
 }
 
+.post-full-header,
+.post-full-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-footer-nav a:first-child {
+    margin-left: 0;
+}
+
 /*</editor-fold>*/
 
 .site-nav-logo img {
     height: 28px !important;
+}
+
+.post-full-content h3 a {
+    box-shadow: none;
 }
 
 /*!*<editor-fold desc="Hamburger btn">*!*/
@@ -252,8 +266,6 @@
     }
 
     /*</editor-fold>*/
-
-    /*<editor-fold desc="Homepage specific styling">*/
 
     body.home-template .site-nav:not(.fixed-nav-active) .site-nav-content {
         margin-top: 12px; /* `(`.site-nav` height - `#menu-btn` height) / 2 */

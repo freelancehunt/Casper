@@ -49,6 +49,10 @@
     padding-right: 0;
 }
 
+.kg-bookmark-description {
+    overflow-x: hidden;
+}
+
 .site-footer-nav a:first-child {
     margin-left: 0;
 }

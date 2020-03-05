@@ -43,41 +43,45 @@
     </div>
 
     {{!-- The big email subscribe modal content --}}
-    {{#if @labs.members}}
-    <div class="subscribe-success-message">
-        <a class="subscribe-close" href="javascript:;"></a>
-        Вы успешно подписались на {{@site.title}}!
-    </div>
+    {{!--
 
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-close" href="#"></a>
-        <div class="subscribe-overlay-content">
-            {{#if @site.logo}}
-                <img class="subscribe-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
-            {{/if}}
-            <div class="subscribe-form">
-                <h1 class="subscribe-overlay-title">Подпишитесь на {{@site.title}}</h1>
-                <p class="subscribe-overlay-description">Будьте в курсе важных событий в мире фриланса — лучшие публикации у вас на почте раз в неделю!</p>
-                <form data-members-form="subscribe">
-                    <div class="form-group">
-                        <input class="subscribe-email" data-members-email placeholder="youremail@example.com"
-                            autocomplete="false" />
-                        <button class="button primary" type="submit">
-                            <span class="button-content">Подписаться</span>
-                            <span class="button-loader">{{> "icons/loader"}}</span>
-                        </button>
-                    </div>
-                    <div class="message-success">
-                        <strong>Отлично!</strong> Вы успешно подписаны на наш дайджест!
-                    </div>
-                    <div class="message-error">
-                        Пожалуйста, укажите верный адрес почты.
-                    </div>
-                </form>
+        {{#if @labs.members}}
+            <div class="subscribe-success-message">
+                <a class="subscribe-close" href="javascript:;"></a>
+                Вы успешно подписались на {{@site.title}}!
             </div>
-        </div>
-    </div>
-    {{/if}}
+
+            <div id="subscribe" class="subscribe-overlay">
+                <a class="subscribe-close" href="#"></a>
+                <div class="subscribe-overlay-content">
+                    {{#if @site.logo}}
+                        <img class="subscribe-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
+                    {{/if}}
+                    <div class="subscribe-form">
+                        <h1 class="subscribe-overlay-title">Подпишитесь на {{@site.title}}</h1>
+                        <p class="subscribe-overlay-description">Будьте в курсе важных событий в мире фриланса — лучшие публикации у вас на почте раз в неделю!</p>
+                        <form data-members-form="subscribe">
+                            <div class="form-group">
+                                <input class="subscribe-email" data-members-email placeholder="youremail@example.com"
+                                    autocomplete="false" />
+                                <button class="button primary" type="submit">
+                                    <span class="button-content">Подписаться</span>
+                                    <span class="button-loader">{{> "icons/loader"}}</span>
+                                </button>
+                            </div>
+                            <div class="message-success">
+                                <strong>Отлично!</strong> Вы успешно подписаны на наш дайджест!
+                            </div>
+                            <div class="message-error">
+                                Пожалуйста, укажите верный адрес почты.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+
+    --}}
 
     {{!-- jQuery, required for fitvids --}}
     <script

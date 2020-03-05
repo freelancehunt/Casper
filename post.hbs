@@ -110,9 +110,13 @@ into the {body} of the default.hbs template --}}
             </section>
 
             {{!-- Email subscribe form at the bottom of the page --}}
-            {{#if @labs.members}}
-                {{> subscribe-form}}
-            {{/if}}
+            {{!--
+
+                {{#if @labs.members}}
+                    {{> subscribe-form}}
+                {{/if}}
+
+            --}}
 
             <div id="emojicom-widget-inline"></div>
 

@@ -118,6 +118,7 @@
             }
 
             $('#menu-btn, .nav-dropdown-container').click(function() {
+                $('.nav-dropdown-container.open').not(this).removeClass('open');
                 $(this).toggleClass('open');
             });
 

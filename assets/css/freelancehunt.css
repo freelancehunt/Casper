@@ -346,6 +346,7 @@
         position: relative;
         margin: 0 2px 0 0;
         background: none !important;
+        overflow-y: scroll;
 
         border: none; /* no border required for small screens as now dropdown is fullwidth */
     }

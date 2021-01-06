@@ -188,7 +188,6 @@
 .nav-dropdown {
     max-width: initial;
     margin-top: 11px;
-    overflow-y: auto;
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -338,7 +337,7 @@
         visibility: visible;
         opacity: 1;
         transform: translateY(0%);
-        max-height: 80vh;
+        max-height: 85vh;
         transition-delay: 0s;
     }
 
@@ -346,6 +345,7 @@
         position: relative;
         margin: 0 2px 0 0;
         background: none !important;
+        overflow-y: scroll;
 
         border: none; /* no border required for small screens as now dropdown is fullwidth */
     }
